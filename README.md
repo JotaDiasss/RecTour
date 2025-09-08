@@ -1,4 +1,4 @@
-# Rec-Tour  
+# RecTour  
 
 🚀 **Rec-Tour** é um projeto web voltado para o turismo em Recife, reunindo pontos turísticos, experiências, gastronomia e hospedagens em um só lugar.  
 
@@ -17,7 +17,4 @@
 
 - **HTML5**  
 - **CSS3**  
-- **JavaScript (ES6)**  
-
-## 📂 Estrutura do projeto  
-
+- **JavaScript**
