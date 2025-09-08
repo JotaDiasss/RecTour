@@ -1,6 +1,6 @@
 # RecTour  
 
-🚀 **Rec-Tour** é um projeto web voltado para o turismo em Recife, reunindo pontos turísticos, experiências, gastronomia e hospedagens em um só lugar.  
+🚀 **Rec-Tour** Foi um prototipo feito durante o hackathon da prefeitura do recife (Furdunço Criativo) voltado para o turismo em, reunindo pontos turísticos, experiências, gastronomia e hospedagens em um só lugar, alem de tambem disponibilizar graficos sobre o movimento do local em comparacao a momentos anteriores para os clientes (donos de estabelecimentos ou responsaveis por pontos turisticos e eventos).
 
 ## 📌 Funcionalidades  
 
