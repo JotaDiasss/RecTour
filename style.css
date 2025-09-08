@@ -1,0 +1,677 @@
+/* ================== Global ================== */
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(223, 243, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73%;
+    height: 75px;
+    background-color: rgb(238, 249, 255);
+    border-radius: 30px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.nav_rectour{
+    color: rgb(40,40,40);
+    margin-right: 200px;
+    font-family: 'Epunda Slab', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgb(40,40,40);
+    font-weight: 400;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.nav_link:hover {
+    background-color: rgb(221, 242, 255);
+    transition: background 0.4s ease;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.fist_home_section {
+    background: url("assets/recife_backgound.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+}
+
+.first_home_div {
+    display: flex;
+    align-items: center;
+}
+
+.recife_text {
+    font-family: 'Epunda Slab', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(238,249,255);
+}
+
+.location_icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.cards_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.text_title {
+    font-family: 'Epunda Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(40,40,40);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+}
+
+.card_experiencia,
+.card_gastronomia,
+.card_hospedagens {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card_experiencia:hover,
+.card_gastronomia:hover,
+.card_hospedagens:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0,0,0,0.5) 0px 10px 20px;
+}
+
+.card_experiencia {
+    background: url("/assets/instituto_brennand.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_gastronomia {
+    background: url("/assets/moendo_na_laje.png") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_hospedagens {
+    background: url("/assets/novotel.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_text {
+    color: white;
+    margin: 0 0 20px 20px;
+    font-family: 'Epunda Slab', serif;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.points_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 200px auto;
+    max-width: 1000px;
+}
+
+.text_card {
+    background-color: rgb(238,249,255);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+.main_title {
+    font-family: 'Epunda Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(40,40,40);
+    margin-bottom: 20px;
+}
+
+.p_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.capiba {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.recife_history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+    background: url("assets/recife.jpg") no-repeat center scroll;
+    background-size: cover;
+    padding: 70px 20px;
+}
+
+.recife_history .text_card {
+    max-width: 600px;
+}
+
+.gallery_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.gallery_title {
+    font-family: 'Epunda Slab', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(40,40,40);
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.gallery_div {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.gallery_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery_img,
+.gallery_img2 {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,43,99);
+    height: auto;
+    padding: 30px 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(238,249,255);
+    gap: 30px;
+}
+
+.footer_logo{
+    background-color: rgb(238,249,255);
+    border-radius: 15px;
+    max-width: 100px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+
+}
+
+.navbar_logo{
+    max-width: 65px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        background-color: rgb(238, 249, 255);
+        border-radius: 30px;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .nav_rectour{
+        color: rgb(40,40,40);
+        font-family: 'Epunda Slab', serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        background-color: rgb(238,249,255);
+        position: absolute;
+        top: 75px;   /* logo abaixo do nav */
+        left: 0;     /* começa no canto esquerdo */
+        width: 100%; /* ocupa toda a largura */
+        padding: 20px 0;
+        border-radius: 0 0 15px 15px;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card_experiencia,
+    .card_gastronomia,
+    .card_hospedagens {
+        width: 100%;
+        height: 400px;
+        aspect-ratio: 3 / 4;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .points_section {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+        gap: 20px;
+    }
+
+    .capiba {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .p_text {
+        font-size: 18px;
+        max-width: 300px;
+    }
+
+    .recife_history {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .text_card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .gallery_div {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .gallery_img,
+    .gallery_img2 {
+        max-width: 90%;
+    }
+
+    .gallery_title {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+}
+
+.card_marco_zero:hover,
+.card_paco_frevo:hover,
+.card_brennand:hover,
+.card_cais_sertao:hover,
+.card_praia_bv:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0,0,0,0.5) 0px 10px 20px;
+}
+
+.centralizer {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.card_marco_zero,
+.card_paco_frevo,
+.card_brennand,
+.card_cais_sertao,
+.card_praia_bv {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card_marco_zero {
+    background: url("/assets/local_experiences/marco-zero-recife.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_paco_frevo {
+    background: url("assets/local_experiences/paço-do-frevo-recife.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_brennand {
+    background: url("assets/local_experiences/ricardo-brennand-museum.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_cais_sertao {
+    background: url("assets/local_experiences/cais-do-sertão.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_praia_bv {
+    background: url("assets/local_experiences/praia-bv.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.margin-top {
+    margin-top: 200px;
+}
+
+.p_text_2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card_bode,
+.card_entre_bode,
+.card_entre_amigos,
+.card_salbrasa,
+.card_tiopepe {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card_bode:hover,
+.card_entre_bode:hover,
+.card_entre_amigos:hover,
+.card_salbrasa:hover,
+.card_tiopepe:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0,0,0,0.5) 0px 10px 20px;
+}
+
+.card_bode {
+    background: url("/assets/restaurants/bode-do-no-boa-viagem.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_entre_bode {
+    background: url("assets/restaurants/entre-amigos-o-bode.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_entre_amigos {
+    background: url("assets/restaurants/entre-amigos-praia.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_salbrasa {
+    background: url("assets/restaurants/sal-e-brasa-jardins.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_tiopepe {
+    background: url("assets/restaurants/tiopepe.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_novotel,
+.card_atlanta,
+.card_bugan,
+.card_mar,
+.card_andrade {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card_novotel:hover,
+.card_atlanta:hover,
+.card_bugan:hover,
+.card_mar:hover,
+.card_andrade:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0,0,0,0.5) 0px 10px 20px;
+}
+
+.card_novotel {
+    background: url("/assets/hotel/novotel.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_atlanta {
+    background: url("assets/hotel/atlanta.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_bugan {
+    background: url("assets/hotel/bugan.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_mar {
+    background: url("assets/hotel/mar-conventions.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.card_andrade {
+    background: url("assets/hotel/andrade.jpg") no-repeat center scroll;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+}
+
+.reduce_scale {
+    max-width: 300px;
+}
+
+.centralizer_blue {
+    background-color: rgb(0,43,99);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.centralizer_blue2 {
+    background-color: rgb(0,43,99);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.point_cont {
+    font-family: 'Epunda Slab', serif;
+    font-weight: 600;
+    color: rgb(238,249,255);
+    font-size: 30px;
+}
+
+.get_point {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.get_point2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+@media (max-width: 768px) {
+    .centralizer_blue {
+        background-color: rgb(0,43,99);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        margin-top: 100px;
+    }
+
+    .centralizer_blue2 {
+        background-color: rgb(0,43,99);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .get_point {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px;
+    }
+
+    .get_point2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px;
+    }
+
+}
+
+.logo_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(40,40,40);
+
+}
+
+.dashboard_section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
